@@ -14,19 +14,36 @@
 
 
 
+// Программа, которая принимает 2 числа и выводит, является ли второе число кратным первого.
+// 34, 5 -> не кратно, остаток 4  ;  4, 16 -> кратно
+
+// Console.WriteLine("Введите первое число: ");
+// int a = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Введите второе число: ");
+// int b = int.Parse(Console.ReadLine()!);
+// if (b%a == 0)
+// {
+//     Console.Write("Кратно");
+// }
+// else
+// {
+//     int ost = b%a;
+//     Console.Write($"Не кратно, остаток {ost}");
+// }
 
 
+
+
+// Написать программу, которая принимает на вход число и проверяет, 
+//кратно ли оно одновременно 7 и 23.  14-> нет   45-> нет  161-> да
 
 Console.WriteLine("Введите первое число: ");
 int a = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите второе число: ");
-int b = int.Parse(Console.ReadLine()!);
-if (b%a == 0)
+if ((a%7 == 0) && (a%23 == 0))
 {
-    Console.Write("Кратно");
+    Console.Write("Да");
 }
 else
 {
-    int ost = b%a;
-    Console.Write($"Не кратно, остаток {ost}");
+    Console.Write("Нет");
 }
