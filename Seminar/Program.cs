@@ -37,13 +37,26 @@
 // Написать программу, которая принимает на вход число и проверяет, 
 //кратно ли оно одновременно 7 и 23.  14-> нет   45-> нет  161-> да
 
+// Console.WriteLine("Введите первое число: ");
+// int a = int.Parse(Console.ReadLine()!);
+// if ((a%7 == 0) && (a%23 == 0))
+// {
+//     Console.Write("Да");
+// }
+// else
+// {
+//     Console.Write("Нет");
+// }
+
+// вариант 2
 Console.WriteLine("Введите первое число: ");
 int a = int.Parse(Console.ReadLine()!);
-if ((a%7 == 0) && (a%23 == 0))
+
+if ((a%7 != 0) || (a%23 != 0))
 {
-    Console.Write("Да");
+    Console.WriteLine("Не делится");
 }
 else
 {
-    Console.Write("Нет");
+    Console.WriteLine("Введёное число делится на 7 и на 23");
 }
