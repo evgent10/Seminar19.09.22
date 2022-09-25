@@ -1,29 +1,20 @@
 ﻿// Задача 10
 //Напишите программу, которая принимает на вход трёхзначное число и 
 //на выходе показывает вторую цифру этого числа.
-Console.WriteLine("Введите трёхзначное число: ");
-int n = int.Parse(Console.ReadLine()!);
-if((n < 100) | (n > 999))  
-    {
-        Console.WriteLine("Не верно написано число");
-        return;
-    }
+// Console.WriteLine("Введите трёхзначное число: ");
+// int n = int.Parse(Console.ReadLine()!);
+// if((n < 100) | (n > 999))  
+//     {
+//         Console.WriteLine("Не верно написано число");
+//         return;
+//     }
     
-int n1 = n/100;
-int n2 = n - n1*100;
-int n3 = n2 % 10;
-int n4 = n2 - n3;
-int n5 = n4 / 10;
-Console.WriteLine($"Вторая цифра {n5}");
-
-
-
-
-
-
-
-
-
+// int n1 = n/100;
+// int n2 = n - n1*100;
+// int n3 = n2 % 10;
+// int n4 = n2 - n3;
+// int n5 = n4 / 10;
+// Console.WriteLine($"Вторая цифра {n5}");
 
 
 //     Задача 13
@@ -34,11 +25,40 @@ Console.WriteLine($"Вторая цифра {n5}");
 // 32679 -> 6
 
 // Console.WriteLine("Введите число: ");
-// int a = int.Parse(Console.ReadLine()!);
-// if (a < 100)
-// {
-//     Console.WriteLine("Третей цифры нет");
-// }
+// int n = int.Parse(Console.ReadLine()!);
+// if(n < 100) 
+//     {
+//        Console.WriteLine("Нет третьего числа");
+//        return;
+//     }
+//  Console.WriteLine(n.ToString()[2]);
+
+
+
+
+
+//        Задача 15
+//  Напишите программу, которая принимает на вход цифру, 
+//  обозначающую день недели, и проверяет, является ли этот день выходным.
+// 6 -> да  7 -> да   1 -> нет
+// Console.WriteLine("Введите число: ");
+// int n = int.Parse(Console.ReadLine()!);
+// if((n >= 8) | (n <= 0))
+//     {
+//        Console.WriteLine("Нет такого дня в неделе");
+//        return;
+//     }
+// if((n >= 1) & (n <=5))
+//     {
+//        Console.WriteLine("Нет, сегодня не выходной день");
+//        return;
+//     }    
+// if((n >= 6) | (n <=7))
+//     {
+//        Console.WriteLine("Да, сегодня выходной день");
+//        return;
+//     }
+
 
 
 
